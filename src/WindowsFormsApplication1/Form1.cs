@@ -28,7 +28,6 @@ namespace WindowsFormsApplication1
             webBrowser1.ProgressChanged += new WebBrowserProgressChangedEventHandler(onProgress);
             webBrowser1.Navigated += new WebBrowserNavigatedEventHandler(onNavigated);
             webBrowser1.Navigate(GAMEHOST);
-            urltxt.AppendText(GAMEHOST + "\n");
         }
         private int count = 0;
         private void PrintDocument(object sender, WebBrowserDocumentCompletedEventArgs e)
